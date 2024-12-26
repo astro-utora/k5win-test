@@ -15,39 +15,39 @@ import {
 const services = [
   {
     icon: <HeadphonesIcon className="h-8 w-8" />,
-    title: '24/7 Support',
-    description: 'Our dedicated team is always here to help you',
-    action: 'Contact Support',
+    title: 'การสนับสนุนตลอด 24 ชม.',
+    description: 'ทีมงานเฉพาะของเราพร้อมช่วยเหลือคุณเสมอ',
+    action: 'ติดต่อฝ่ายสนับสนุน',
   },
   {
     icon: <MessageCircle className="h-8 w-8" />,
-    title: 'Live Chat',
-    description: 'Get instant responses through our live chat service',
-    action: 'Start Chat',
+    title: 'แชทสด',
+    description: 'รับคำตอบทันทีผ่านบริการแชทสดของเรา',
+    action: 'เริ่มแชท',
   },
   {
     icon: <Shield className="h-8 w-8" />,
-    title: 'Secure Gaming',
-    description: 'Licensed and regulated gaming environment',
-    action: 'Learn More',
+    title: 'การเล่นเกมที่ปลอดภัย',
+    description: 'สภาพแวดล้อมการเล่นเกมที่มีใบอนุญาตและควบคุม',
+    action: 'เรียนรู้เพิ่มเติม',
   },
   {
     icon: <Clock className="h-8 w-8" />,
-    title: 'Quick Withdrawals',
-    description: 'Process withdrawals within 15 minutes',
-    action: 'View Methods',
+    title: 'การถอนเงินอย่างรวดเร็ว',
+    description: 'ดำเนินการถอนเงินภายใน 15 นาที',
+    action: 'ดูวิธีการ',
   },
   {
     icon: <CreditCard className="h-8 w-8" />,
-    title: 'Payment Solutions',
-    description: 'Multiple secure payment options available',
-    action: 'See Options',
+    title: 'โซลูชันการชำระเงิน',
+    description: 'มีตัวเลือกการชำระเงินที่ปลอดภัยหลายแบบ',
+    action: 'ดูตัวเลือก',
   },
   {
     icon: <HelpCircle className="h-8 w-8" />,
-    title: 'FAQ',
-    description: 'Find answers to common questions',
-    action: 'View FAQ',
+    title: 'คำถามที่พบบ่อย',
+    description: 'ค้นหาคำตอบสำหรับคำถามที่พบบ่อย',
+    action: 'ดูคำถามที่พบบ่อย',
   },
 ];
 
@@ -55,7 +55,7 @@ export function ServiceDepartment() {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Customer Service</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">ฝ่ายบริการลูกค้า</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <motion.div

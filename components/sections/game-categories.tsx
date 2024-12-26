@@ -17,48 +17,48 @@ import {
 const games = [
   {
     icon: <Dice5 className="h-8 w-8" />,
-    title: 'Slots',
-    description: 'Experience thrilling slot games with massive jackpots',
+    title: 'สล็อต',
+    description: 'สัมผัสประสบการณ์เกมสล็อตสุดตื่นเต้นพร้อมแจ็คพอตมหาศาล',
   },
   {
     icon: <Joystick className="h-8 w-8" />,
-    title: 'Shoot Fish',
-    description: 'Dive into exciting underwater shooting games',
+    title: 'ยิงปลา',
+    description: 'ดำดิ่งสู่เกมยิงปืนใต้น้ำสุดตื่นเต้น',
   },
   {
     icon: <PlaySquare className="h-8 w-8" />,
-    title: 'Card Games',
-    description: 'Classic card games with modern twists',
+    title: 'เกมไพ่',
+    description: 'เกมไพ่คลาสสิกพร้อมความทันสมัย',
   },
   {
     icon: <Gamepad2 className="h-8 w-8" />,
-    title: 'Live Casino',
-    description: 'Real-time casino experience with live dealers',
+    title: 'คาสิโนสด',
+    description: 'ประสบการณ์คาสิโนแบบเรียลไทม์กับดีลเลอร์สด',
   },
   {
     icon: <Trophy className="h-8 w-8" />,
-    title: 'Sports',
-    description: 'Bet on your favorite sports events worldwide',
+    title: 'กีฬา',
+    description: 'เดิมพันในกิจกรรมกีฬาที่คุณชื่นชอบทั่วโลก',
   },
   {
     icon: <Swords className="h-8 w-8" />,
-    title: 'Cockfighting',
-    description: 'Traditional cockfighting betting platform',
+    title: 'การชนไก่',
+    description: 'แพลตฟอร์มเดิมพันการชนไก่แบบดั้งเดิม',
   },
   {
     icon: <Rocket className="h-8 w-8" />,
-    title: 'Esports',
-    description: 'Bet on popular competitive gaming tournaments',
+    title: 'อีสปอร์ต',
+    description: 'เดิมพันในทัวร์นาเมนต์เกมการแข่งขันยอดนิยม',
   },
   {
     icon: <Ticket className="h-8 w-8" />,
-    title: 'Lottery',
-    description: 'Daily lottery draws with huge prizes',
+    title: 'ลอตเตอรี',
+    description: 'การจับฉลากลอตเตอรีรายวันพร้อมรางวัลใหญ่',
   },
   {
     icon: <Bitcoin className="h-8 w-8" />,
-    title: 'Blockchain',
-    description: 'Crypto-based games and betting options',
+    title: 'บล็อคเชน',
+    description: 'เกมที่ใช้คริปโตและตัวเลือกการเดิมพัน',
   },
 ];
 
@@ -66,7 +66,7 @@ export function GameCategories() {
   return (
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12">Our Games</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">เกมของเรา</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {games.map((game, index) => (
             <motion.div

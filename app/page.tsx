@@ -21,11 +21,11 @@ export default function Home() {
           <div className="flex items-center space-x-4">
             <ModeToggle />
             <Button variant="outline">
-              Register
+              ลงทะเบียน
             </Button>
             <Button>
               <LogIn className="mr-2 h-4 w-4" />
-              Login
+              เข้าสู่ระบบ
             </Button>
           </div>
         </div>
@@ -48,7 +48,7 @@ export default function Home() {
               <span className="font-bold text-xl">K5Win</span>
             </div>
             <div className="text-sm text-muted-foreground">
-              © {new Date().getFullYear()} K5Win. All rights reserved.
+              © {new Date().getFullYear()} K5Win. สงวนลิขสิทธิ์.
             </div>
           </div>
         </div>
