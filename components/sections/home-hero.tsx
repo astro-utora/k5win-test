@@ -35,3 +35,5 @@ export function HomeHero() {
     </section>
   );
 }
+
+export const runtime = "edge";

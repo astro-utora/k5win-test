@@ -69,3 +69,5 @@ export function Promotions() {
     </section>
   );
 }
+
+export const runtime = "edge";

@@ -87,3 +87,5 @@ export function GameCategories() {
     </section>
   );
 }
+
+export const runtime = "edge";

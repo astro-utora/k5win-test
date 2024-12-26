@@ -79,3 +79,5 @@ export function ServiceDepartment() {
     </section>
   );
 }
+
+export const runtime = "edge";
