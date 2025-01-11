@@ -1,35 +1,42 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme-provider';
-import Navbar from '@/components/navbar';
-import Footer from '@/components/footer';
+import "./globals.css";
+import { Inter } from "next/font/google";
+import { ThemeProvider } from "@/components/theme-provider";
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: 'K5Win | Premium Online Gaming & Betting Platform',
-  description: 'Experience the thrill of premium online gaming with K5Win. Enjoy slots, live casino, sports betting, and more with secure transactions and 24/7 support.',
-  keywords: 'online betting, casino games, slots, live casino, sports betting, esports betting, online lottery, สล็อต, pg slot, pg slot เว็บ ตรง, เว็บ สล็อต, slot เว็บ ตรง, เว็บ สล็อต ตรง, สล็อต เครดิต ฟรี, สล็อต pg, เว็บ ตรง สล็อต, เว็บ สล็อต ใหม่ ล่าสุด',
-  openGraph: {
-    title: 'K5Win | Premium Online Gaming & Betting Platform',
-    description: 'Experience the thrill of premium online gaming with K5Win.',
-    images: [
-      {
-        url: 'https://images.unsplash.com/photo-1460472178825-e5240623afd5?q=80&w=2069&auto=format&fit=crop',
-        width: 1200,
-        height: 630,
-        alt: 'K5Win Gaming Platform',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'K5Win | Premium Online Gaming & Betting Platform',
-    description: 'Experience the thrill of premium online gaming with K5Win.',
-    images: ['https://images.unsplash.com/photo-1460472178825-e5240623afd5?q=80&w=2069&auto=format&fit=crop'],
-  },
-};
+// export const metadata: Metadata = {
+//   title: "สล็อต PG SLOT เว็บตรง | เว็บสล็อตใหม่ล่าสุด อันดับ 1",
+//   description:
+//     "เว็บตรงสล็อต ให้บริการ สล็อต pg และ pg slot เว็บตรง พร้อมเครดิตฟรี ระบบฝาก-ถอนออโต้ slot เว็บตรง ตลอด 24 ชั่วโมง เว็บสล็อตใหม่ล่าสุด",
+//   keywords:
+//     "สล็อต, pg slot, pg slot เว็บตรง, เว็บสล็อต, slot เว็บตรง, เว็บสล็อตตรง, สล็อตเครดิตฟรี, สล็อต pg, เว็บตรงสล็อต, เว็บสล็อตใหม่ล่าสุด",
+//   openGraph: {
+//     title: "สล็อต PG SLOT เว็บตรง | เว็บสล็อตใหม่ล่าสุด อันดับ 1",
+//     description:
+//       "เว็บตรงสล็อต ให้บริการ สล็อต pg และ pg slot เว็บตรง พร้อมเครดิตฟรี ระบบฝาก-ถอนออโต้ slot เว็บตรง ตลอด 24 ชั่วโมง เว็บสล็อตใหม่ล่าสุด",
+//     images: [
+//       {
+//         url: "https://images.unsplash.com/photo-1460472178825-e5240623afd5?q=80&w=2069&auto=format&fit=crop",
+//         width: 1200,
+//         height: 630,
+//         alt: "สล็อต PG SLOT เว็บตรง",
+//       },
+//     ],
+//     locale: "th_TH",
+//     type: "website",
+//   },
+//   twitter: {
+//     card: "summary_large_image",
+//     title: "สล็อต PG SLOT เว็บตรง | เว็บสล็อตใหม่ล่าสุด อันดับ 1",
+//     description:
+//       "เล่น สล็อต pg และ pg slot เว็บตรง สนุกกับระบบฝากถอนออโต้และโปรโมชั่นมากมาย",
+//     images: [
+//       "https://images.unsplash.com/photo-1460472178825-e5240623afd5?q=80&w=2069&auto=format&fit=crop",
+//     ],
+//   },
+//   robots: "index, follow",
+//   viewport: "width=device-width, initial-scale=1.0",
+// };
 
 export default function RootLayout({
   children,
@@ -37,7 +44,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="th" suppressHydrationWarning>
+      <head>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
@@ -45,7 +56,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {/* <Navbar/> */}
           {children}
         </ThemeProvider>
       </body>
